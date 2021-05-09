@@ -1,0 +1,76 @@
+/* Color pallette*/
+:root{
+    --main-green-color: #95c22b;
+    --dark-green-color: #507b00;
+    --darker-green-color: #28430a;
+    --light-brown-color: #7b4425;
+    --dark-brown-color: #63371e;     /* Browns can be used for buttons */  
+
+}
+*       /* Selects all elements, setting to 0 allows for maximum flexibility and control */
+{
+  padding: 3;
+  margin: 5;
+}
+
+
+section{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+	height:5vh;
+	display:grid;
+  font-size:22px;
+  text-align:left
+}
+
+div.scroll {
+  background-color: white;
+  width: 600px;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Navigation bar */
+
+#navbar h1{
+    margin-bottom: 1.5rem;
+    color:var(--dark-brown-color);
+}
+
+.navbar-container
+{
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--main-green-color);
+}
+
+#navbar h1{
+    text-align: center;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;   
+}
+
+
+#navbar ul li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 0 4rem 0 4rem;
+}
+
+#navbar li a:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+    color: var(--light-brown-color);
+}
