@@ -1,0 +1,166 @@
+/* Color pallette*/
+:root{
+    --main-green-color: #95c22b;
+    --dark-green-color: #507b00;
+    --darker-green-color: #28430a;
+    --light-brown-color: #7b4425;
+    --dark-brown-color: #63371e;     /* Browns can be used for buttons */  
+
+}
+
+
+*       /* Selects all elements */
+{
+    padding: 0;
+  margin: 0;
+}
+
+
+
+/* body{
+  height:100vh;
+  display:grid;
+  grid-template-columns: auto minmmax(0, 40rem) auto;
+  grid-template-rows: 5rem auto 5rem;
+} */
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 29px;
+}
+
+/* main{
+  font-size:20px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+} */
+
+div.scroll {
+  background-color: #fed9ff;
+  width: 600px;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+li{
+  font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size:28px;
+}
+
+
+/* Navigation bar */
+
+#navbar h1{
+    margin-bottom: 1.5rem;
+    color:var(--dark-brown-color);
+}
+
+.navbar-container
+{
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--main-green-color);
+}
+
+#navbar h1{
+    text-align: center;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;   
+}
+
+
+#navbar ul li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 0 4rem 0 4rem;
+}
+
+#navbar li a:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+    color: var(--light-brown-color);
+}
+
+
+/* Why and how */
+
+#why-how
+{
+    padding: 2rem 0 1rem 0;
+}
+
+.why-how-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+}
+
+.main-img{
+    background: url(https://info.waxie.com/hs-fs/hubfs/The-Future-of-Recycling-in-America-01.png?width=2917&name=The-Future-of-Recycling-in-America-01.png) no-repeat center center/cover;
+    padding: 1rem;
+    min-height: 100%;
+    min-width: 80%; 
+}
+
+
+.why{
+    padding: 1.5rem;
+}
+
+.how
+{
+    display: block;
+    padding: 1.5rem;
+}
+
+#reminders .reminders-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    height: 60vh;
+}
+
+
+#reminders .recycling-img
+{
+    background: url(https://i.pinimg.com/originals/95/ca/30/95ca302dcca97dd21416b04c0d742672.jpg) no-repeat center center/cover;   
+    width: 80%;
+    /* min-width: 80%;  */
+    
+}
+
+.re
+
+.reminders-text
+{   
+    text-align:center;
+}
+
+.reminders-text p{
+    margin-bottom: 1rem;
+}
+
+.reminders-text li{
+    padding: 0.5rem;
+}
